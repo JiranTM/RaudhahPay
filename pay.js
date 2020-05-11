@@ -18,7 +18,7 @@ export default class RaudhahPay extends React.Component {
     }
 
     async pay({ api_uri, collection_id, due, ref1, ref2, 
-            customer:{ first_name, last_name, email, mobile }, 
+            customer:{ first_name, last_name, address, email, mobile }, 
             product: { title, price, quantity } }) {
 
         let redirect_uri = `${api_uri}/raudhahpay`
@@ -29,7 +29,7 @@ export default class RaudhahPay extends React.Component {
             due: due || moment().format('YYYY-MM-DD'),
             currency: "MYR",
             ref1, ref2,
-            first_name, last_name, email, mobile, 
+            first_name, last_name, address, email, mobile, 
             title, price, quantity
         };
 
