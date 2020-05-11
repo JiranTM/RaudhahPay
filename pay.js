@@ -17,7 +17,7 @@ export default class RaudhahPay extends React.Component {
         this.pay = this.pay.bind(this);
     }
 
-    async pay({ api_uri, collection_id, due, ref1, ref2, 
+    pay({ api_uri, collection_id, due, ref1, ref2, 
             first_name, last_name, address, email, mobile, 
             title, price, quantity }) {
 

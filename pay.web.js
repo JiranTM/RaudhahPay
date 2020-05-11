@@ -1,9 +1,9 @@
 import qs from 'qs';
 
 export default class RaudhahPay {
-    async pay({ api_uri, redirect_uri, collection_id, due, ref1, ref2, 
-        customer:{ first_name, last_name, address, email, mobile }, 
-        product: { title, price, quantity } }) {
+    pay({ api_uri, redirect_uri, collection_id, due, ref1, ref2, 
+            first_name, last_name, address, email, mobile, 
+            title, price, quantity }) {
         
         let body = {
             collection_code:collection_id,
