@@ -3,7 +3,7 @@ import { View, Image, Text, StyleSheet, Modal, TouchableOpacity } from 'react-na
 import WebView from 'react-native-webview';
 import moment from 'moment';
 import payment from './img/payment.gif';
-import qs from 'query-string';
+import qs from 'qs';
 
 export default class RaudhahPay extends React.Component {
     constructor(props) {

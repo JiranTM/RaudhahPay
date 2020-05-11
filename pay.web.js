@@ -1,4 +1,4 @@
-import qs from 'query-string';
+import qs from 'qs';
 
 export default class RaudhahPay {
     async pay({ api_uri, redirect_uri, collection_id, due, ref1, ref2, customer, product }) {
