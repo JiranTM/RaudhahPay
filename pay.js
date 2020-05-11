@@ -18,8 +18,8 @@ export default class RaudhahPay extends React.Component {
     }
 
     async pay({ api_uri, collection_id, due, ref1, ref2, 
-            customer:{ first_name, last_name, address, email, mobile }, 
-            product: { title, price, quantity } }) {
+            first_name, last_name, address, email, mobile, 
+            title, price, quantity }) {
 
         let redirect_uri = `${api_uri}/raudhahpay`
 
