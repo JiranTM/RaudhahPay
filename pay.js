@@ -17,7 +17,9 @@ export default class RaudhahPay extends React.Component {
         this.pay = this.pay.bind(this);
     }
 
-    async pay({ api_uri, collection_id, due, ref1, ref2, customer, product }) {
+    async pay({ api_uri, collection_id, due, ref1, ref2, 
+            customer:{ first_name, last_name, email, mobile }, 
+            product: { title, price, quantity } }) {
 
         let redirect_uri = `${api_uri}/raudhahpay`
 
@@ -27,11 +29,11 @@ export default class RaudhahPay extends React.Component {
             due: due || moment().format('YYYY-MM-DD'),
             currency: "MYR",
             ref1, ref2,
-            customer, product
+            first_name, last_name, email, mobile, 
+            title, price, quantity
         };
 
         let url = `${api_uri}/raudhahpay/pay?${qs.stringify(body)}`;
-        console.log(url);
 
         this.setState({ uri:url });
     }
