@@ -1,4 +1,4 @@
-import qs from 'qs';
+import qs from 'query-string';
 
 export default class RaudhahPay {
     pay({ api_uri, redirect_uri, collection_id, due, ref1, ref2, 
