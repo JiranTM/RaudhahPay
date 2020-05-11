@@ -1,0 +1,18 @@
+{
+  "name": "raudhahpay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nik Mirza",
+  "license": "Proprietary",
+  "dependencies": {
+    "moment": "^2.25.3",
+    "query-string": "^6.12.1",
+    "react": "^16.13.1",
+    "react-native": "^0.62.2",
+    "react-native-webview": "^9.4.0"
+  }
+}
