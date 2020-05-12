@@ -21,11 +21,11 @@ export default class RaudhahPay extends React.Component {
             first_name, last_name, address, email, mobile, 
             title, price, quantity }) {
 
-        let redirect_uri = `${api_uri}/raudhahpay`
+        //let redirect_uri = `${api_uri}/raudhahpay`
 
         let body = {
             collection_code:collection_id,
-            redirect_uri,
+            //redirect_uri,
             due: due || moment().format('YYYY-MM-DD'),
             currency: "MYR",
             ref1, ref2,
