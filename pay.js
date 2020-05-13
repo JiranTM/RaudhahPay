@@ -34,7 +34,6 @@ export default class RaudhahPay extends React.Component {
         };
 
         let url = `${api_uri}/raudhahpay/pay?${qs.stringify(body)}`;
-        console.log(url);
         this.setState({ uri:url });
     }
 
