@@ -45,7 +45,7 @@ export default class RaudhahPay extends React.Component {
         let res = JSON.parse(json);
         let { paid } = res;
 
-        if (paid)
+        if (Number(paid))
             onSuccess(res);
         else{
             onError(res);
