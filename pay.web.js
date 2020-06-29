@@ -1,7 +1,8 @@
+import React from 'react';
 import qs from 'query-string';
 import moment from 'moment';
 
-export default class RaudhahPay {
+export default class RaudhahPay extends React.Component {
     static pay({ api_uri, redirect_uri, collection_id, due, ref1, ref2, 
             first_name, last_name, address, email, mobile, 
             title, price, quantity }) {
