@@ -12,7 +12,7 @@ export default class RaudhahPay {
 
         let body = {
             collection_code:collection_id,
-            redirect_uri:window.location.href,
+            redirect_uri:redirect_uri || window.location.href,
             due: due || moment().format('YYYY-MM-DD'),
             currency: "MYR",
             ref1, ref2,
