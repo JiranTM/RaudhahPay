@@ -43,6 +43,6 @@ export default class RaudhahPay extends React.Component {
     }
 
     render(){
-        return <div/>
+        return <></>
     }
 }
